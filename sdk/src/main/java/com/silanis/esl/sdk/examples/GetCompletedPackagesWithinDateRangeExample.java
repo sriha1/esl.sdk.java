@@ -14,8 +14,8 @@ import java.util.Date;
  */
 public class GetCompletedPackagesWithinDateRangeExample extends SDKSample {
 
-    public static final Date START_DATE = new DateTime(DateTimeZone.UTC).toDate();
-    public static final Date END_DATE = new DateTime(DateTimeZone.UTC).toDate();
+    public static final Date START_DATE = DateTime.parse("2024-10-01T00:00:00Z").toDate();
+    public static final Date END_DATE = DateTime.parse("2024-10-21T08:54:00Z").toDate();
 
     public Page<DocumentPackage> draftPackages;
     public Page<DocumentPackage> sentPackages;
